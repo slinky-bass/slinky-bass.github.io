@@ -1,0 +1,62 @@
+.portfolio-wrapper {
+	background-color:  #bfbfbf; 
+	@include minWidth($midi-width) {
+  }
+}
+
+.featured-work {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	border-spacing: 0;
+	@include minWidth($midi-width) {
+		float: left;
+		width: 50%;
+  }
+  @include minWidth($maxi-width) {
+  	width: 33.33333%;
+  }
+	a {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		transform: translateZ(0);
+		&::before {
+			display: block;
+	    content: "";
+	    width: 100%;
+	    padding-top: 62.5%;
+		}
+	}
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		max-width: 90%;
+		transform: translateX(-50%) translateY(-50%) translateZ(0);
+		transition: transform 300ms ease-in;
+	}	
+	h3 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 1em;
+		color: #fff;
+		background-color: $primary-colour;
+		font-size: 0.9em;
+		font-weight: normal;
+		transform: translateY(134%) translateZ(0);
+		transition: transform 300ms ease-in;
+		@include minWidth($midi-width) {
+			
+	  }
+	}
+	&:hover h3 {
+		transform: translateY(34%) translateZ(0);
+	}
+	&:hover a img {
+		transform: scale(0.9, 0.9) translateX(-50%) translateY(-70%) translateZ(0);
+	}
+}

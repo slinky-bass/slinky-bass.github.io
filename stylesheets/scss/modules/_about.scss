@@ -1,0 +1,44 @@
+.about-wrapper {
+	padding-top: 3em;
+	background-color: $primary-colour;
+	h1, h4 {
+		padding: 0 1em;
+		text-align: center;
+		color: #fff;
+	}
+	h4 {
+		margin-bottom: 3.5em;
+	}
+}
+
+.profile-article {
+	padding: 1em;
+	background-color: #fff;
+	color: $primary-colour;
+}
+
+.profile-img {
+	text-align: center;
+	margin-bottom: 0.5em;
+	@include minWidth($midi-width) {
+		float: left;
+		display: inline-block;
+		width: 25%;	
+		margin: 2em 1em 1em 1em;
+	}
+	img {
+		max-width: 100%;
+	}
+	figcaption {
+		font-size: 0.9em;
+	}
+}
+
+.profile-content {
+	p {
+		line-height: 1.5;
+	}
+	@include minWidth($midi-width) {
+		display: block;
+	}
+}
