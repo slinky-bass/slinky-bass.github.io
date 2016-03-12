@@ -1,5 +1,6 @@
 .nav-wrapper {
 	background-color: $primary-colour;
+	box-sizing: border-box;
 	z-index: 1;
 	header {
 		padding: 1em;

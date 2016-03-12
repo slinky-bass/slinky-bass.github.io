@@ -355,6 +355,7 @@ th {
 
 .nav-wrapper {
   background-color: #3a3a3c;
+  box-sizing: border-box;
   z-index: 1; }
   .nav-wrapper header {
     padding: 1em; }
@@ -407,7 +408,6 @@ th {
       background-color: #86878b; }
       @media screen and (min-width: 581px) {
         .main-nav ul li:hover {
-          border-bottom: 2px #fff solid;
           background-color: transparent; } }
     @media screen and (min-width: 581px) {
       .main-nav ul li {
@@ -424,6 +424,11 @@ th {
       font-weight: lighter;
       text-decoration: none;
       text-align: center; }
+      @media screen and (min-width: 581px) {
+        .main-nav ul li a:hover {
+          color: #95d6f0; } }
+    .main-nav ul li a.active {
+      color: #25aae1; }
 
 .nav-wrapper.sticky {
   position: fixed;
