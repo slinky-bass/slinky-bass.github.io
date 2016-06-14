@@ -19,7 +19,6 @@
 			&:hover {
 				background-color: lighten($secondary-colour, 10%);
 				@include minWidth($midi-width) {
-					//border-bottom: 2px #fff solid;
 					background-color: transparent;
 				}
 			}
@@ -40,12 +39,12 @@
 				text-align: center;
 				@include minWidth($midi-width) {
 					&:hover {
-						color: lighten($highlight-colour, 25%);
+						color: lighten($primary-highlight, 25%);
 					}
 				}
 			}
 			a.active {
-				color: $highlight-colour;
+				color: $primary-highlight;
 			}
 		}
 	}

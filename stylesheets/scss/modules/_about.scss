@@ -1,13 +1,9 @@
 .about-wrapper {
 	padding-top: 3em;
-	background-color: $primary-colour;
-	h1, h4 {
+	h1 {
 		padding: 0 1em;
 		text-align: center;
-		color: #fff;
-	}
-	h4 {
-		margin-bottom: 3.5em;
+		color: $primary-highlight;
 	}
 }
 
@@ -35,6 +31,12 @@
 }
 
 .profile-content {
+	h3 {
+		text-align: center;
+		@include minWidth($midi-width) {
+			text-align: left;
+		}
+	}
 	p {
 		line-height: 1.5;
 	}

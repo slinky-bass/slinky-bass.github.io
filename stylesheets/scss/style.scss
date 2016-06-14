@@ -25,11 +25,11 @@ ul {
 }
 
 a {
-	color: $highlight-colour;
+	color: $primary-highlight;
 	text-decoration: none;
 	transition: color 300ms ease-in;
 	&:hover {
-		color: darken($highlight-colour, 20%);
+		color: $secondary-highlight;
 	}
 }
 
@@ -41,7 +41,7 @@ a {
 
 //########## SURGICAL 
 .cyan {
-	color: $highlight-colour;
+	color: $primary-highlight;
 }
 
 .white {
@@ -54,6 +54,10 @@ a {
 
 .blue {
 	background-color: #196684;
+}
+
+.grey {
+	background-color: $light-grey;
 }
 
 .line-break {
